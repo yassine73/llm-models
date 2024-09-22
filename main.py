@@ -37,7 +37,7 @@ def openai_model():
     ## OpenAI api key
     os.environ["OPENAI_API_KEY"] = "sk-..."
     
-    ## Initialize Ollama & invoke
+    ## Initialize OpenAI & invoke
     llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7)
     print(llm.invoke("hi").content)
     
